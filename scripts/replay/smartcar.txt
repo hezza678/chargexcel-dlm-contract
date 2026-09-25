@@ -1,0 +1,8 @@
+# Canned answers for smartcar.be: one token, then the car accepts commands.
+> POST https://iam.smartcar.com/oauth2/token
+< 200
+{"access_token": "not-a-real-token", "expires_in": 3600}
+
+> POST https://vehicle.api.smartcar.com/v3/vehicles/
+< 200
+{"status": "success"}

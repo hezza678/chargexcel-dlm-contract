@@ -1,0 +1,8 @@
+# Canned answers for epiccharging.be: two ports charging.
+> GET https://acme.epiccharging.com/api/external/v1/charger-port/
+< 200
+{"results": [{"id": 11, "max_power": 7.2}, {"id": 12, "max_power": 3.3}]}
+
+> PATCH https://acme.epiccharging.com/api/external/v1/charger-port/
+< 200
+{}

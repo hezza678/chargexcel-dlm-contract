@@ -1,0 +1,4 @@
+# Canned answers for minimal.be.
+> PATCH https://example.invalid/charger/
+< 200
+{}
