@@ -6,6 +6,16 @@ current sensors, and sheds load by opening its relay before the service is
 overdrawn. The EV charging station or car is a separate device downstream of
 it.
 
+<p align="center">
+  <img src="docs/images/chargexcel-diagram.gif" width="600"
+       alt="Animated diagram: a house with a 100 A electric panel and 50 A of household loads (PC, lights, A/C, washer, oven). ChargeXcel sits between the panel and the charging station, which charges a car at 40 A.">
+</p>
+
+In this example the house has a 100 A service and its own appliances are
+drawing 50 A. ChargeXcel watches the whole service, so the charging station
+and everything else in the house together stay within what the service can
+carry.
+
 ChargeXcel knows how much spare capacity your service has, second by second.
 It can't ask a car to draw *less*; all it can do is cut the circuit. So it
 publishes that headroom, and a **plugin** reads it, decides what the car or
