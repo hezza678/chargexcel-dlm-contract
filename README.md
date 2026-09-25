@@ -17,11 +17,13 @@ and everything else in the house together stay within what the service can
 carry.
 
 ChargeXcel knows how much spare capacity your service has, second by second.
-It can't ask a car to draw *less*; all it can do is cut the circuit. So it
-publishes that headroom, and a **plugin** reads it, decides what the car or
-charging station should draw, and tells that equipment in the equipment's
-own protocol or cloud API. All the plugin sends back is a status line for the
-owner's `/dlm` page: whether it's active, and a few words on what it is doing.
+For Tesla vehicles, it has a built-in connector that sets the charging current
+directly through Tesla's cloud service. For everything else, it can't ask a car
+to draw *less*; all it can do is cut the circuit. So it publishes that
+headroom, and a **plugin** reads it, decides what the car or charging station
+should draw, and tells that equipment what to do in its own protocol or cloud
+API. All the plugin sends back is a status line for the owner's `/dlm` page:
+whether it's active, and a few words on what it is doing.
 
 This repo is everything you need to write one. It is **not** ChargeXcel's
 firmware.
