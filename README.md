@@ -8,11 +8,11 @@ it.
 
 <p align="center">
   <img src="docs/images/chargexcel-diagram.gif" width="600"
-       alt="Animated diagram: a house with a 100 A electric panel and 50 A of household loads (PC, lights, A/C, washer, oven). ChargeXcel sits between the panel and the charging station, which charges a car at 40 A.">
+       alt="Animated diagram: a house with a 100 A electric panel and 60 A of household loads (PC, lights, A/C, washer, oven). ChargeXcel sits between the panel and the charging station, which charges a car at 40 A.">
 </p>
 
 In this example the house has a 100 A service and its own appliances are
-drawing 50 A. ChargeXcel watches the whole service, so the charging station
+drawing up to 60 A. ChargeXcel watches the whole service, so the charging station
 and everything else in the house together stay within what the service can
 carry.
 
